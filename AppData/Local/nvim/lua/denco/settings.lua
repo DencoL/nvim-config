@@ -1,7 +1,7 @@
 vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.visualbell = true
-vim.opt.scrolloff = 8 
+vim.opt.scrolloff = 8
 vim.opt.showmode = true
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
@@ -12,6 +12,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.smartindent = true
 vim.opt.expandtab = true
+vim.opt.autoindent = true
 
 
 vim.cmd("set noerrorbells")
