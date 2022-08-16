@@ -1,5 +1,6 @@
 require("gitsigns").setup()
 require("nvim_comment").setup()
+require("nvim-surround").setup()
 
 require"nvim-treesitter.configs".setup {
     highlight = { enable = true }

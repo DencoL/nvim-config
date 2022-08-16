@@ -17,8 +17,12 @@ return require("packer").startup(function(use)
     use "nvim-treesitter/nvim-treesitter"
     use "ray-x/lsp_signature.nvim"
     use "Hoffs/omnisharp-extended-lsp.nvim"
-    use "terrortylor/nvim-comment"
     use "romgrk/barbar.nvim"
+
+    -- Code manipulation
+    use "terrortylor/nvim-comment"
+    use "kylechui/nvim-surround"
+    use "machakann/vim-swap"
 
     -- Telescope
     use "nvim-telescope/telescope.nvim"
