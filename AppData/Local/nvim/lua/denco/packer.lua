@@ -35,4 +35,9 @@ return require("packer").startup(function(use)
     -- Git
     use "lewis6991/gitsigns.nvim"
     use "kdheepak/lazygit.nvim"
+
+    -- Debugging
+    use 'mfussenegger/nvim-dap'
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+    use "theHamsta/nvim-dap-virtual-text"
 end)
