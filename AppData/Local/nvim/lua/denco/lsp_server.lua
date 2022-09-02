@@ -13,6 +13,7 @@ function M.setup_server(server_name, cmd, other_settings)
         cmd = cmd or server.document_config.default_config.cmd,
         capabilities = capabilities,
         on_attach = function(_, bufnr)
+            print("lsp connected")
             lsp_signature.on_attach(lsp_signature, bufnr)
             nnoremap('<leader>rn', vim.lsp.buf.rename)
             nnoremap('<leader>a', vim.lsp.buf.code_action)

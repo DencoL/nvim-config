@@ -20,7 +20,7 @@ vim.cmd("set nofixendofline")
 vim.cmd("set signcolumn=yes")
 vim.cmd("set colorcolumn=120")
 vim.cmd("set clipboard+=unnamed")
-vim.cmd("let g:lightline = {'colorscheme': 'tokyonight'}")
+vim.cmd("set completeopt=menu,menuone,noselect")
 
 vim.g.mapleader = " "
 vim.g.netrw_bufsettings = "noma nomod nu nobl nowrap ro"
