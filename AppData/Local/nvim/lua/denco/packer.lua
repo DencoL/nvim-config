@@ -18,6 +18,7 @@ return require("packer").startup(function(use)
     use "ray-x/lsp_signature.nvim"
     use "Hoffs/omnisharp-extended-lsp.nvim"
     use "romgrk/barbar.nvim"
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
     -- Code manipulation
     use "terrortylor/nvim-comment"
