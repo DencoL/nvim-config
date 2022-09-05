@@ -17,6 +17,7 @@ function M.setup_server(server_name, cmd, other_settings)
             lsp_signature.on_attach(lsp_signature, bufnr)
             nnoremap('<leader>rn', vim.lsp.buf.rename)
             nnoremap('<leader>a', vim.lsp.buf.code_action)
+            nnoremap('<leader>cf', vim.lsp.buf.formatting)
         end
     }
 
