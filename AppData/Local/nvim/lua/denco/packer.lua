@@ -6,6 +6,7 @@ return require("packer").startup(function(use)
     -- Looks
     use "folke/tokyonight.nvim"
     use "kyazdani42/nvim-web-devicons"
+    use { "catppuccin/nvim", as = "catppuccin" }
 
     -- LSP and IDE-like features
     use "neovim/nvim-lspconfig"

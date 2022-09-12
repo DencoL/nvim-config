@@ -1,6 +1,19 @@
-vim.cmd("colorscheme tokyonight")
-vim.cmd("highlight LineNr guifg=#545D86")
-vim.cmd("highlight Normal guibg=none")
-vim.cmd("highlight NonText guibg=none")
+vim.g.catppuccin_flavour = "mocha"
 
-vim.cmd("let g:lightline = {'colorscheme': 'tokyonight'}")
+require("catppuccin").setup({
+    integrations = {
+        barbar = true,
+        native_lsp = {
+            enabled = true,
+            virtual_text = {
+                errors = { "bold" },
+                hints = { "bold" },
+                warnings = { "bold" },
+                information = { "bold" }
+            }
+        }
+    }
+})
+
+vim.cmd [[colorscheme catppuccin]]
+vim.cmd("let g:lightline = {'colorscheme': 'catppuccin'}")
