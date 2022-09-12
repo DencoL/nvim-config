@@ -21,6 +21,7 @@ return require("packer").startup(function(use)
     use "romgrk/barbar.nvim"
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
     use "jiangmiao/auto-pairs"
+    use "nvim-treesitter/nvim-treesitter-context"
 
     -- Code manipulation
     use "terrortylor/nvim-comment"

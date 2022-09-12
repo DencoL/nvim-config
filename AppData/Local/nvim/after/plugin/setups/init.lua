@@ -1,6 +1,7 @@
 require("gitsigns").setup()
 require("nvim_comment").setup()
 require("nvim-surround").setup()
+require'treesitter-context'.setup{}
 
 local dap = require("dap")
 dap.adapters.coreclr = {
