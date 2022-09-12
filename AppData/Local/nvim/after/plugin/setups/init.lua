@@ -4,26 +4,26 @@ require("nvim-surround").setup()
 
 local dap = require("dap")
 dap.adapters.coreclr = {
-  type = 'executable',
-  command = 'C:/netcoredbg/netcoredbg',
-  args = {'--interpreter=vscode'}
+    type = 'executable',
+    command = 'C:/netcoredbg/netcoredbg',
+    args = { '--interpreter=vscode' }
 }
 
 dap.configurations.cs = {
-  {
-    type = "coreclr",
-    name = "launch - netcoredbg",
-    request = "launch",
-    program = function()
-        return vim.fn.input('Path to dll', vim.fn.getcwd() .. '/bin/Debug/', 'file')
-    end,
-  },
+    {
+        type = "coreclr",
+        name = "launch - netcoredbg",
+        request = "launch",
+        program = function()
+            return vim.fn.input('Path to dll', vim.fn.getcwd() .. '/bin/Debug/', 'file')
+        end,
+    },
 }
 
-require("nvim-dap-virtual-text").setup{}
+require("nvim-dap-virtual-text").setup {}
 require("dapui").setup()
 
-require"nvim-treesitter.configs".setup {
+require "nvim-treesitter.configs".setup {
     highlight = { enable = true }
 }
 
@@ -40,6 +40,6 @@ require("lualine").setup {
 
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 for type, icon in pairs(signs) do
-  local hl = "DiagnosticSign" .. type
-  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+    local hl = "DiagnosticSign" .. type
+    vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
