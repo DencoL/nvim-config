@@ -29,7 +29,9 @@ require "nvim-treesitter.configs".setup {
     highlight = { enable = true }
 }
 
-require "nvim-treesitter.install".compilers = { "clang" }
+if vim.fn.has("win32") then
+    require "nvim-treesitter.install".compilers = { "clang" }
+end
 
 require("lualine").setup {
     sections = {
