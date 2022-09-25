@@ -22,6 +22,7 @@ return require("packer").startup(function(use)
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
     use "jiangmiao/auto-pairs"
     use "nvim-treesitter/nvim-treesitter-context"
+    use "honza/vim-snippets"
 
     -- Code manipulation
     use "terrortylor/nvim-comment"

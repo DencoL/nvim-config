@@ -1,7 +1,8 @@
 require("gitsigns").setup()
 require("nvim_comment").setup()
 require("nvim-surround").setup()
-require'treesitter-context'.setup{}
+require("treesitter-context").setup{}
+require("luasnip.loaders.from_snipmate").load({ path = { "./snippets" } })
 
 local dap = require("dap")
 dap.adapters.coreclr = {
