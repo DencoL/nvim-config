@@ -3,6 +3,7 @@ require("nvim_comment").setup()
 require("nvim-surround").setup()
 require("treesitter-context").setup{}
 require("luasnip.loaders.from_snipmate").load({ path = { "./snippets" } })
+require("nvim-autopairs").setup{}
 
 local dap = require("dap")
 dap.adapters.coreclr = {

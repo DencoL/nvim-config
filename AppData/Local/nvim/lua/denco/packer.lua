@@ -20,7 +20,7 @@ return require("packer").startup(function(use)
     use "Hoffs/omnisharp-extended-lsp.nvim"
     use "romgrk/barbar.nvim"
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-    use "jiangmiao/auto-pairs"
+    use "windwp/nvim-autopairs"
     use "nvim-treesitter/nvim-treesitter-context"
     use "honza/vim-snippets"
 
