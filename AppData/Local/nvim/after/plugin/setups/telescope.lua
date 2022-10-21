@@ -9,11 +9,18 @@ require("telescope").setup{
           i = {
             ["<Esc>"] = require("telescope.actions").close
           }
-        }
+        },
+        layout_strategy = 'vertical',
+        layout_config = { height = 0.95 },
     },
     pickers = {
         find_files = {
             follow = true
+        },
+        lsp_references = {
+            fname_width = 50,
+            show_line = false,
+            include_declaration = false
         }
     }
 }
