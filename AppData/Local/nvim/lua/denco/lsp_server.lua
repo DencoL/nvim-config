@@ -4,7 +4,7 @@ local lspconfig = require("lspconfig")
 local lsp_signature = require("lsp_signature")
 local nnoremap = require("denco.keymap").nnoremap
 
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 function M.setup_server(server_name, cmd, other_settings)
     local server = lspconfig[server_name]
