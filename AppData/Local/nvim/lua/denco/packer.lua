@@ -23,6 +23,7 @@ return require("packer").startup(function(use)
     use "windwp/nvim-autopairs"
     use "nvim-treesitter/nvim-treesitter-context"
     use "honza/vim-snippets"
+    use "RRethy/vim-illuminate"
 
     -- Code manipulation
     use "terrortylor/nvim-comment"
