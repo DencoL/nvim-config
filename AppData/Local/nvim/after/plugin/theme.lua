@@ -17,3 +17,4 @@ require("catppuccin").setup({
 
 vim.cmd [[colorscheme catppuccin]]
 vim.cmd("let g:lightline = {'colorscheme': 'catppuccin'}")
+vim.cmd [[highlight LineNr guifg=#5b5d76]]
