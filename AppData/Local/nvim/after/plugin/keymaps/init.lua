@@ -21,3 +21,4 @@ nnoremap("<leader>dd", "<cmd>lua require('dap').continue()<CR>")
 
 nnoremap("<leader>hs", "*``")
 nnoremap("<leader>hr", ":noh<CR>")
+nnoremap("<leader>w", ":w<CR>")
