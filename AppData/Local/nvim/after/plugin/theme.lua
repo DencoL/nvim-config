@@ -4,13 +4,7 @@ require("catppuccin").setup({
     integrations = {
         barbar = true,
         native_lsp = {
-            enabled = true,
-            virtual_text = {
-                errors = { "bold" },
-                hints = { "bold" },
-                warnings = { "bold" },
-                information = { "bold" }
-            }
+            enabled = true
         }
     }
 })
