@@ -16,9 +16,6 @@ nnoremap("<leader>cac", "<cmd>lua require('denco.csharp_helpers').add_class()<CR
 nnoremap("<leader>p", '"0p<CR>');
 nnoremap("<leader>P", '"0P<CR>');
 
-nnoremap("<leader>db", "<cmd>lua require('dap').toggle_breakpoint()<CR>")
-nnoremap("<leader>dd", "<cmd>lua require('dap').continue()<CR>")
-
 nnoremap("<leader>hs", "*``")
 nnoremap("<leader>hr", ":noh<CR>")
 nnoremap("<leader>w", ":w<CR>")
