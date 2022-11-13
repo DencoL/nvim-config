@@ -18,9 +18,12 @@ local border = {
     { "│", "FloatBorder" }
 }
 
-local handlers =  {
-  ["textDocument/hover"] =  vim.lsp.with(vim.lsp.handlers.hover, {border = border})
-}
+local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
+function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
+  opts = opts or {}
+  opts.border = opts.border or border
+  return orig_util_open_floating_preview(contents, syntax, opts, ...)
+end
 
 function M.setup_server(server_name, cmd, other_settings, skipIlluminate)
     local server = lspconfig[server_name]
@@ -28,7 +31,6 @@ function M.setup_server(server_name, cmd, other_settings, skipIlluminate)
     local setup = {
         cmd = cmd or server.document_config.default_config.cmd,
         capabilities = capabilities,
-        handlers = handlers,
         on_attach = function(client, bufnr)
             print("lsp connected")
             lsp_signature.on_attach(lsp_signature, bufnr)

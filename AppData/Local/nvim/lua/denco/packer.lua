@@ -19,11 +19,12 @@ return require("packer").startup(function(use)
     use "ray-x/lsp_signature.nvim"
     use "Hoffs/omnisharp-extended-lsp.nvim"
     use "romgrk/barbar.nvim"
-    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+    use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
     use "windwp/nvim-autopairs"
     use "nvim-treesitter/nvim-treesitter-context"
     use "honza/vim-snippets"
     use "RRethy/vim-illuminate"
+    use({ "glepnir/lspsaga.nvim", branch = "main" })
 
     -- Code manipulation
     use "terrortylor/nvim-comment"
@@ -44,9 +45,9 @@ return require("packer").startup(function(use)
 
     -- Debugging
     use 'mfussenegger/nvim-dap'
-    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+    use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
     use "theHamsta/nvim-dap-virtual-text"
 
     -- Other
-    use 'lewis6991/impatient.nvim'
+    use "lewis6991/impatient.nvim"
 end)
